@@ -1,0 +1,14 @@
+{
+  "name": "twit",
+  "description": "un-twit twitter",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["twit.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
